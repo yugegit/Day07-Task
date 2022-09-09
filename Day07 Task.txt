@@ -1,0 +1,58 @@
+Write a “person” class to hold all the details.
+
+class Person {
+    constructor (name, age, gender, address, interest){
+        this.name = name;
+        this,age = age;
+        this.gender = gender;
+        this.address = address
+        this.interest = interest;
+
+    }
+
+    logPerson = () => {
+        console.log (`${this.name}`)
+    };
+
+    myage()  {
+        return `is ${this.age}years old.`;
+    }
+
+    myaddress()  {
+        return `Lives in ${this.address}.`;
+    }
+
+    myinterest() {
+        return `He likes ${this.interest}`
+    };
+}
+
+
+var newPerson = new Person ("yugendran","20","India","volleyball");
+newPerson.logPerson();
+console.log(newPerson.myage());
+console.log(newPerson.myaddress());
+console.log(newPerson.myinterest());
+
+
+write a class to calculate the uber price.
+
+
+class uber{
+    
+    constructor (km){
+        this.km = km;
+        this.price = this.km*3
+    }
+
+    getPrice()
+
+{
+    return `charge for the ride is ${this.price}`
+}
+}
+
+
+const Ride = new uber(30)
+console.log(Ride.getPrice());
+
